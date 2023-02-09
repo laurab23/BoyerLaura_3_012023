@@ -1,19 +1,20 @@
 /*   */
-h1,h2,h3,p{
-    color:black;
-}
+h1,h2,h3,p
+{
+    Color:black;
+    Font-family:"Raleway";}
 
 h1{
-Weight: 700;
+font-weight: 700;
 Size: 22px;
 
 }
 p{
-    Weight: 600;
+    font-Weight: 600;
     Size: 14px
 }
 h2{
-    Weight: 700;
+    font-Weight: 700;
     Size: 16px;
 }
 h3{
