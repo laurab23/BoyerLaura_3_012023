@@ -1,36 +1,31 @@
-/*   */
-h1,h2,h3,p
-{
-    Color:black;
-    Font-family:"Raleway";}
+
+h1, h2, h3, p{
+font-family: 'Raleway', sans-serif;}
 
 h1{
 font-weight: 700;
 Size: 22px;
+}
 
-}
-p{
-    font-Weight: 600;
-    Size: 14px
-}
 h2{
     font-Weight: 700;
     Size: 16px;
 }
 h3{
-
+    font-weight: 700;
+    size: 18px;
 }
-/*INFO NAV*/
+/*body header nav*/
+.textalign{
+    text-align: right;
+}
 
 /*INFO SEARCH*/
 
 /*INFO FILTERS*/ 
 
 /*ICON*/
-.filtericon
-widht:
-height:
-color: 0065FC;
+.filtersicon
 
 
 

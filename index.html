@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-     <script src="https://kit.fontawesome.com/928b8a3dcb.js" crossorigin="anonymous"></script>
     <title>Booki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/928b8a3dcb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <img src="images/logo/Booki.png" alt="logo de l'agence">
-        <nav class="">
-            <ul>
-                <li><a href="#hébergements">Hébergements</a></li>
-                <li><a href="#activités">Activités</a></li>
+        <nav class="align">
+            <ul class="listalign">
+                <li class="textgauch"><a href="#hébergements">Hébergements</a></li>
+                <li class="textdroite"><a href="#activités">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -27,16 +29,16 @@
         <section id="search-bar">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <i class="fa-solid fa-location-dot filtericon"></i>
+            <i class="fa-solid fa-location-dot"></i>
             <form method="get" action="#">
                 <input type="text" name="search" id="search" placeholder="Marseille, France">
                 <button type="submit">
-                    <span>Rechercher</span>
+                    <span class="">Rechercher</span>
                 </button>
             </form>
         </section>
-        <section id="filters" >
-            <p>Filtres</p>
+        <section id="filters">
+            <p class="">Filtres</p>
             <i class="fa-solid fa-money-bill-wave filtericon"></i>
             <p>Economiques</p>
             <i class="fa-solid fa-person filtericon"></i>
@@ -56,27 +58,23 @@
                 <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                     alt="Hôtel de la mer,chambre bleue style marin lit double" style="width:50%">
             </div>
-            <div class="cardtitle">
+            <div class="cardcontent">
                 <h2>Hôtel de la mer</h2>
-            </div>
-            <div class="content">
                 <p>Nuit à partir de 46 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
 
             <div class="card">
                 <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                     alt="Chambres d'hôtes au coeur de l'eau, chambre moderne gris clair avec mezzanine lit double marron clair style baroque"
-                    style="width: 50%">
-            </div>
-            <div class="cardtitle">
-                <h2>Chambres d'hôtes au coeur de l'eau</h2>
+                    style="width:50%">
             </div>
             <div class="cardcontent">
+                <h2>Chambres d'hôtes au coeur de l'eau</h2>
                 <p>Nuit à partir de 71 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
 
             <div class="card">
@@ -84,13 +82,12 @@
                     alt="Hôtel le Soleil du matin, chambre verte à miroirs style romantique porte fenetre vue sur rue, lit double"
                     style="width:50%">
             </div>
-            <div class="cardtitle">
-                <h2>Hôtel le Soleil du matin</h2>
-            </div>
+
             <div class="cardcontent">
+                <h2>Hôtel le Soleil du matin</h2>
                 <p>Nuit à partir de 128 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
 
             <div class="card">
@@ -98,13 +95,11 @@
                     alt="Hôtel chez Amina, chambre blanche et marron 2 lits separés, parquet et bureau bois vernis marron mi foncé"
                     style="width:50%">
             </div>
-            <div class="cardtitle">
-                <h2>Hôtel chez Amina</h2>
-            </div>
             <div class="cardcontent">
+                <h2>Hôtel chez Amina</h2>
                 <p>Nuit à partir de 96 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
 
             <div class="card">
@@ -112,13 +107,11 @@
                     alt="Hôtel bleu et blanc, chambre blanche et marron lit double, parquet et meubles bois vernis mi-foncé"
                     style="width:50%">
             </div>
-            <div class="cardtitle">
-                <h2>Hôtel bleu et blanc</h2>
-            </div>
             <div class="cardcontent">
+                <h2>Hôtel bleu et blanc</h2>
                 <p>Nuit à partir de 68 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
 
             <div class="card">
@@ -126,13 +119,11 @@
                     alt="Hôtel du Port, petite chambre moderne grise claire et blanche avec 2 lits simples séparés fred-kleber, vue sur cour"
                     style="width:50%">
             </div>
-            <div class="cardtitle">
-                <h2>Hôtel du Port</h2>
-            </div>
             <div class="cardcontent">
+                <h2>Hôtel du Port</h2>
                 <p>Nuit à partir de 52 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
 
             <div class="card">
@@ -140,13 +131,11 @@
                     alt="Auberge la Canebière, petite chambre en angle traversant double vue sur cannebière à lit simple en fer superposés"
                     style="width:50%">
             </div>
-            <div class="cardtitle">
-                <h2>Auberge la Canebière</h2>
-            </div>
             <div class="cardcontent">
+                <h2>Auberge la Canebière</h2>
                 <p>Nuit à partir de 25 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
 
             <div class="card">
@@ -154,13 +143,11 @@
                     alt="Auberge le Panier, petite chambre pour 4 personnes avec 2 lits simples superposés tout en bois naturel"
                     style="width:50%">
             </div>
-            <div class="cardtitle">
-                <h2>Auberge le Panier</h2>
-            </div>
             <div class="cardcontent">
+                <h2>Auberge le Panier</h2>
                 <p>Nuit à partir de 23 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
 
             <div class="card">
@@ -168,13 +155,11 @@
                     alt="Hôtel les Mouettes, petite chambre blanc crème à lit double, avec grand placard miroirs, sol moquette marrron clair"
                     style="width:50%">
             </div>
-            <div class="cardtitle">
-                <h2>Hôtel les Mouettes</h2>
-            </div>
             <div class="cardcontent">
+                <h2>Hôtel les Mouettes</h2>
                 <p>Nuit à partir de 76 e</p>
-                <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i></i>
+                <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                class="fa-solid fa-star"></i>
             </div>
             <p>Afficher plus</p>
         </section>
@@ -188,13 +173,11 @@
                         alt="Hôtel le Soleil du matin, chambre verte à miroirs style romantique porte fenetre vue sur rue, lit double"
                         style="width:50%">
                 </div>
-                <div class="cardtitle">
-                    <h2>Hôtel le soleil du matin</h2>
-                </div>
                 <div class="cardcontent">
+                    <h2>Hôtel le soleil du matin</h2>
                     <p>Nuit à partir de 128 e</p>
-                    <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></i>
+                    <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                    class="fa-solid fa-star"></i>
                 </div>
             </article>
             <article>
@@ -203,13 +186,11 @@
                         alt="Chambres d'hôtes au coeur de l'eau, chambre moderne gris clair avec mezzanine lit double marron clair style baroque"
                         style="width:50%">
                 </div>
-                <div class="cardtitle">
-                    <h2>Chambres d'hôtes au coeur de l'eau</h2>
-                </div>
                 <div class="cardcontent">
+                    <h2>Chambres d'hôtes au coeur de l'eau</h2>
                     <p>Nuit à partir de 71 e</p>
-                    <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></i>
+                    <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                    class="fa-solid fa-star"></i>
                 </div>
             </article>
 
@@ -219,13 +200,11 @@
                         alt="Hôtel bleu et blanc, chambre blanche et marron lit double, parquet et meubles bois vernis mi-foncé"
                         style="width:50%">
                 </div>
-                <div class="cardtitle">
-                    <h2>Hôtel bleu et blanc</h2>
-                </div>
                 <div class="cardcontent">
+                    <h2>Hôtel bleu et blanc</h2>
                     <p>Nuit à partir de 68 e</p>
-                    <i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></i>
+                    <i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i
+                                    class="fa-solid fa-star"></i>
                 </div>
             </article>
         </aside>
@@ -233,36 +212,36 @@
         <article>
             <h1 id="activités">Activités à Marseille</h1>
             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt="Notre-Dame-de-la-Garde sur les hauteurs de marseille" width="50%">
+                alt="Notre-Dame-de-la-Garde sur les hauteurs de marseille" style="width:50%">
             <p>Notre-Dame-de-la-Garde</p>
             <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                alt="Parc national des Calanques avec vue plongeante sur la mer" width="50%">
+                alt="Parc national des Calanques avec vue plongeante sur la mer" style="width:50%">
             <p>Parc national des Calanques</p>
 
             <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                alt="Fort de Pomègues sur l'ile du Frioul" width="50%">
+                alt="Fort de Pomègues sur l'ile du Frioul" style="width:50%">
             <p>Fort de Pomègues</p>
             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                alt="Vieux-Port regroupant tous les bateaux de plaisance" width="50%">
+                alt="Vieux-Port regroupant tous les bateaux de plaisance" style="width:50%">
             <p>Vieux-Port</p>
         </article>
     </main>
 
     <footer>
         <div>
-            <h4>A propos</h4>
-            <a href="#">Fonctionnement du site</a><br/> 
-            <a href="#">Conditions générales</a><br/>
+            <h3>A propos</h3>
+            <a href="#">Fonctionnement du site</a><br />
+            <a href="#">Conditions générales</a><br />
             <a href="#">Données et confidentialités</a>
         </div>
         <div>
-            <h4>Nos hébergements</h4>
-            <a href="#">Charte qualité</a><br/>
+            <h3>Nos hébergements</h3>
+            <a href="#">Charte qualité</a><br />
             <a href="#">Proposer votre hôtel</a>
         </div>
         <div>
-            <h4>Assistance</h4>
-            <a href="#">Centre d'aide</a><br/>
+            <h3>Assistance</h3>
+            <a href="#">Centre d'aide</a><br />
             <a href="#">Nous contacter</a>
         </div>
     </footer>
