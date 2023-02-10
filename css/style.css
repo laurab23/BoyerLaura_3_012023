@@ -15,24 +15,22 @@ h3{
     font-weight: 700;
     size: 18px;
 }
-/*body header nav*/
-.listalign{
+/*nav*/
+.heb{
     text-align: right;
+    font-weight: 500;
+    font-size: 16px;
+    Width: 113px;
+    Height: 19px;   
+    Left: 138px;
+}
+.act{
+    text-align: right;
+    font-weight: 400;
+    font-size: 16px;
+    width: 63px;
+    height:19px;
+    left: 318px;
 }
 
-/*INFO SEARCH*/
 
-/*INFO FILTERS*/ 
-
-/*ICON*/
-.filtersicon
-
-
-
-/*INFO HEBERGEMENTS
-
-/*INFO POPULAIRES*/
-
-/*INFO FOOTER*/
-
-/*INFO ACTIVITES*/
