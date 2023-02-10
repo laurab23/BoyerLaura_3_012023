@@ -16,11 +16,13 @@
 
 <body>
     <header>
-        <img src="images/logo/Booki.png" alt="logo de l'agence">
+        <div class="header"><!---flexbox conteneur generique--->
+        <img id="logo" src="images/logo/Booki.png" alt="logo de l'agence">
         <nav>
             <a class="heb" href="#hébergements">Hébergements</a>
             <a class="act" href="#activités">Activités</a>
         </nav>
+        </div>
     </header>
 
     <main>
@@ -31,21 +33,21 @@
             <form method="get" action="#">
                 <input type="text" name="search" id="search" placeholder="Marseille, France">
                 <button type="submit">
-                    <span class="">Rechercher</span>
+                    <span class="buttonsearch">Rechercher</span>
                 </button>
             </form>
         </section>
-        <section id="filters">
-            <p class="">Filtres</p>
+        <section id="filters"> <!---span conteneur interne pour 1 element, alors que div c pour plusieurs elements--->
+            <p>Filtres</p>
             <i class="fa-solid fa-money-bill-wave filtericon"></i>
-            <p>Economiques</p>
+            <span class="buttonfilter">Economiques</p>
             <i class="fa-solid fa-person filtericon"></i>
-            <p>Famillial</p>
+            <span class="buttonfilter">Famillial</p>
             <i class="fa-solid fa-heart filtericon"></i>
-            <p>Romantique</p>
+            <span class="buttonfilter">Romantique</p>
             <i class="fa-solid fa-dog filtericon"></i>
-            <p>Animaux autorisés</p>
-            <i class="filtericon fa-solid fa-info"></i>
+            <span class="buttonfilter">Animaux autorisés</p>
+            <i class="fa-solid fa-info"></i>
             <p>plus de 500 logements sont disponibles</p>
         </section>
 

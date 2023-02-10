@@ -1,3 +1,14 @@
+html{
+    font-family: Raleway, sans-serif;
+}
+#logo{
+position: absolute;
+width: 2.9px;
+height: 5.15px;
+left: 35.54px;
+top: 9.53px;
+
+background: #0065FC}
 
 h1, h2, h3, p{
 font-family: 'Raleway', sans-serif;}
@@ -15,7 +26,11 @@ h3{
     font-weight: 700;
     size: 18px;
 }
-/*nav*/
+p{
+    font-weight: 700;
+    size: 18px ; 
+}
+/*header nav flexbox*/
 .heb{
     text-align: right;
     font-weight: 500;
