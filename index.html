@@ -37,7 +37,7 @@
                 </button>
             </form>
         </section>
-        <section id="filters"> <!---span conteneur interne pour 1 element, alors que div c pour plusieurs elements--->
+        <section id="filters"> <!--span conteneur interne pour 1 element, alors que div c pour plusieurs elements-->
             <h2 class="button_filter">Filtres</h2>
             <ul>
                 <li><i class="fa-solid fa-money-bill-wave filtericon"></i>Economique</li>
@@ -48,7 +48,7 @@
             <i class="fa-solid fa-info">plus de 500 logements sont disponibles</i>
         </section>
         <section>
-            <h2 id="hébergements">Hébergements à Marseille</h1>
+            <h2 id="hébergements">Hébergements à Marseille</h2>
                 <article class="card">
                 <img class="img_card" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                     alt="Hôtel de la mer,chambre bleue style marin lit double">
@@ -76,7 +76,6 @@
                 <article class="card">
                 <img class="img_card" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                     alt="Hôtel le Soleil du matin, chambre verte à miroirs style romantique porte fenetre vue sur rue, lit double">
-            <div class="cardcontent">
                 <h3 class="title_card">Hôtel le Soleil du matin</h3>
                 <p class="content_card">Nuit à partir de 128 e</p>
                 <ul>
@@ -200,45 +199,46 @@
                 </article>
         </aside>
     <section>
-            <h2 id="activités">Activités à Marseille</h2>   
-        <article>
-            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt="Notre-Dame-de-la-Garde sur les hauteurs de marseille">
-            <p>Notre-Dame-de-la-Garde</p>
+            <h2 id="title_activités">Activités à Marseille</h2>   
+        <article class="activités">
+            <img class="img_activités" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt="Vieux-Port avec tous ses bateaux de plaisance">
+        <p class="img_title">Vieux-Port</p>
         </article>
-        <article>
-            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                alt="Parc national des Calanques avec vue plongeante sur la mer">
-            <p>Parc national des Calanques</p>
-        <article>
-            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+        <article class="activités">
+            <img class="img_activités" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt="Fort de Pomègues dans un paysage rocheux sur l'ile du Frioul">
-            <p>Fort de Pomègues</p>
+            <p class="img_title">Fort de Pomègues</p>
         </article>
-        <article>
-            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                alt="Vieux-Port avec tous ses bateaux de plaisance">
-            <p>Vieux-Port</p>
+        <article class="activités"> <!--check w3 error unclosed element article-->
+            <img class="img_activités" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Parc national des Calanques avec vue plongeante sur la mer">
+            <p class="img_title">Parc national des Calanques</p>
         </article>
-    </section>
+        <article class="activités">
+            <img class="img_activités" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt="Notre-Dame-de-la-Garde sur les hauteurs de marseille">
+        <p class="img_title">Notre-Dame-de-la-Garde</p>
+        </article>
+    </section> <!--check W3 error end tag section seen but there were open elements-->
     </main>
-</body>
-    <footer>
-            <h3>A propos</h3>
-            <a href="#">Fonctionnement du site</a><br>
-            <a href="#">Conditions générales</a><br>
-            <a href="#">Données et confidentialités</a>
-        </div>
-        <div>
-            <h3>Nos hébergements</h3>
-            <a href="#">Charte qualité</a><br>
-            <a href="#">Proposer votre hôtel</a>
-        </div>
-        <div>
-            <h3>Assistance</h3>
-            <a href="#">Centre d'aide</a><br>
-            <a href="#">Nous contacter</a>
-        </div>
+    <footer class="footer">
+            <h3 class="title_footer">A propos</h3>
+            <ul>
+            <li class="childtitle_footer"><a href="#">Fonctionnement du site</a></li>
+            <li class="childtitle_footer"><a href="#">Conditions générales</a></li>
+            <li class="childtitle_footer"><a href="#">Données et confidentialités</a></li>
+            </ul>
+            <h3 class="title_footer">Nos hébergements</h3>
+            <ul>
+            <li class="childtitle_footer"><a href="#">Charte qualité</a></li>
+            <li class="childtitle_footer"><a href="#">Proposer votre hôtel</a></li>
+            </ul>
+            <h3 class="title_footer">Assistance</h3>
+            <ul>
+            <li class="childtitle_footer"><a href="#">Centre d'aide</a></li>
+            <li class="childtitle_footer"><a href="#">Nous contacter</a></li>
+            </ul>
     </footer>
 </body>
 
