@@ -16,55 +16,67 @@
 
 <body>
     <header class="header">
-        <!--flexbox conteneur generique-->
-        <img class="header_logo" src="images/logo/Booki.png" alt="logo de l'agence">
+        <img class="header__logo" src="images/logo/Booki.png" alt="Booki logo de l'agence"> 
+        <!--header-nav car dans une page il peut y avoir plusieurs nav-->
         <nav class="header-nav">
-            <a class="nav_link" href="#hébergements">Hébergements</a>
-            <a class="nav_link" href="#activités">Activités</a>
+            <a class="header-nav__link" href="#hebergements">Hébergements</a>
+            <a class="header-nav__link" href="#activites">Activités</a>
         </nav>
     </header>
     <main>
-        <section class="search_bar">
-            <h1 class="search_bar_title">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="search_bar_text">En plein centre-ville ou en pleine nature</p>
-            <form method="post" action="#" class="search_bar_form">
-                <label class="form_label" for="search"><i class="fa-solid fa-location-dot"></i></label>
-                <input class="form-input" type="text" name="search" id="search" placeholder="Marseille, France">
-                <button class="form_button" type="submit">
+        <section class="search-bar">
+            <h1 class="search-bar__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="search-bar__text">En plein centre-ville ou en pleine nature</p>
+            <form method="post" action="#" class="search-bar__form">
+                <!--lier chaq label for a son input-->
+                <label for="search" class="form__label" ><i class="fa-solid fa-location-dot"></i></label>
+                <input type="text" name="search" id="search" placeholder="Marseille, France" class="form__input">
+                <button class="form__button" type="submit">
+                    <!--question a poser a wyona form_buton_desktop ?-->
+                    <!--span conteneur interne pour 1 element, alors que div c pour plusieurs elements-->
                     <span class="form_button_desktop">Rechercher</span>
-                    <i class="fa-solid fa-magnyfying-glass form_button_mobile"></i>
+                    <i class="fa-solid fa-magnyfying-glass form__button__mobile"></i>
                 </button>
             </form>
         </section>
-        <section id="filters"> <!--span conteneur interne pour 1 element, alors que div c pour plusieurs elements-->
-            <h2 class="button_filter">Filtres</h2>
-            <ul>
-                <li><i class="fa-solid fa-money-bill-wave filtericon"></i>Economique</li>
-                <li><i class="fa-solid fa-person filtericon"></i>Famillial</li>
-                <li><i class="fa-solid fa-heart filtericon"></i>Romantique</li>
-                <li><i class="fa-solid fa-dog filtericon"></i>Animaux autorisés</li>
-            </ul>
-            <i class="fa-solid fa-info">plus de 500 logements sont disponibles</i>
+        <section class="filter" > 
+            <p class="filter__title">Filtres</p>
+               <i class="fa-solid fa-money-bill-wave filter__icon"></i>
+               <span> class="buttonfilter>Economiques</span>
+                    <i class="fa-solid fa-person filter__icon"></i>
+                    <span> class="buttonfilter>Famillial</span>
+                        <i class="fa-solid fa-heart filter__icon"></i>
+                        <span> class="buttonfilter>Romantique</span>
+                            <i class="fa-solid fa-dog filter__icon"></i>
+                            <span> class="buttonfilter>Animaux autorisés</span>
+                                 <i class="fa-solid fa-info info-icon"></i>
+                                 <p>plus de 500 logements sont disponibles</p>
         </section>
-        <section>
-            <h2 id="hébergements">Hébergements à Marseille</h2>
-            <article class="card">
-                <img class="img_card" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+        <section class="hebergements">
+            <!--id hebergements ancre-->
+            <h2 id="hebergements" class="hébergement-title">Hébergements à Marseille</h2>
+            <article>
+            <div class="card">
+                <img class="card__img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                     alt="Hôtel de la mer,chambre bleue style marin lit double">
-                <h3 class="title_card">Hôtel de la mer</h3>
-                <p class="content_card">Nuit à partir de 46 e</p>
-                <ul>
+            </div>
+            <div>
+                <h3 class="card__title">Hôtel de la mer</h3>
+                <p class="card__content">Nuit à partir de 46 e</p>
+                <ul ul.stars> <!--ul.stars>li combinateur descendants-->
                     <li><i class="fa-solid fa-star"></i></li>
                     <li><i class="fa-solid fa-star"></i></li>
                     <li><i class="fa-solid fa-star"></i></li>
                     <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
                 </ul>
+                </div>
             </article>
             <article class="card">
-                <img class="img_card" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                <img class="card__img" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                     alt="Chambres d'hôtes au coeur de l'eau, chambre moderne gris clair avec mezzanine lit double marron clair style baroque">
-                <h3 class="title_card">Chambres d'hôtes au coeur de l'eau</h3>
-                <p class="content_card">Nuit à partir de 71 e</p>
+                <h3 class="card__title">Chambres d'hôtes au coeur de l'eau</h3>
+                <p class="card__content">Nuit à partir de 71 e</p>
                 <ul>
                     <li><i class="fa-solid fa-star"></i></li>
                     <li><i class="fa-solid fa-star"></i></li>
@@ -198,7 +210,8 @@
             </article>
         </aside>
         <section>
-            <h2 id="title_activités">Activités à Marseille</h2>
+            <!--id ancre activites nav-->
+            <h2 id="activites" class="activités">Activités à Marseille</h2>
             <article class="activités">
                 <img class="img_activités" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                     alt="Vieux-Port avec tous ses bateaux de plaisance">
@@ -222,11 +235,12 @@
         </section> 
     </main>
     <footer class="footer">
-        <h3 class="title_footer">A propos</h3>
-        <ul>
-            <li class="li_footer"><a href="#">Fonctionnement du site</a></li>
-            <li class="li_footer"><a href="#">Conditions générales</a></li>
-            <li class="li_footer"><a href="#">Données et confidentialités</a></li>
+        <h3 class="footer-title">A propos</h3>
+        <!--footer__ul>li combinate child-->
+        <ul class="footer__li">
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialités</a></li>
         </ul>
         <h3 class="title_footer">Nos hébergements</h3>
         <ul>
