@@ -51,7 +51,6 @@
             class="form__input"
           />
           <button class="form__button" type="submit">
-            <!--question a poser a wyona form_buton_desktop ?-->
             <!--span conteneur interne pour 1 element, alors que div c pour plusieurs elements-->
             <span class="form__button--desktop">Rechercher</span>
             <i class="fa-solid fa-magnyfying-glass form__button--mobile"></i>
@@ -61,119 +60,45 @@
       <section class="filters">
         <h2 class="filters__title">Filtres</h2>
         <ul>
-          <li>
-            <i class="fa-solid fa-money-bill-wave filters__icon"></i>
-            Economiques
-          </li>
-          <li>
-            <i class="fa-solid fa-person filters__icon"></i>
-            Famillial
-          </li>
-          <li>
-            <i class="fa-solid fa-heart filters__icon"></i>
-            romantique
-          </li>
-          <li>
-            <i class="fa-solid fa-dog filters__icon"></i>
-            Animaux autorisés
-          </li>
+        <li>
+          <i class="fa-solid fa-money-bill-wave filters__icon"></i>
+        Économiques
+        </li>
+        <li>
+          <i class="fa-solid fa-person filters__icon"></i>
+        Familial
+        </li>
+        <li>
+          <i class="fa-solid fa-heart filters__icon"></i>
+        Romantique
+        </li>
+        <li>
+        <i class="fa-solid fa-dog filters__icon"></i>
+       Animaux autorisés
+        </li>
         </ul>
-        <p>
-          <i class="fa-solid fa-info info__icon"></i>
-
-          plus de 500 logements sont disponibles
-        </p>
+        <p><i class="fa-solid fa-info info__icon"></i>
+        
+        plus de 500 logements sont disponibles dans cette ville</p>
+        
       </section>
       <section id="accommodation" class="accommodation">
-        <!--id hebergements ancre-->
-        <h2 class="accommodation__title">Hébergements à Marseille</h2>
-        <article class="accommodation__card card">
+        <!--id accommodation ancre nav-->
+        <h2  class="accommodation__title">
+          Hébergements à Marseille
+        </h2>
+        <article class="accommodation__card card"> <!--bloc accommodation__card card rajout card pour enfants-->
           <img
             class="card__img"
-            src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-            alt="Hôtel de la mer,chambre bleue style marin lit double"
+             src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+            alt="Auberge la Canebière, petite chambre en angle traversant double vue sur cannebière à lit simple en fer superposés"
           />
           <div class="card__content">
-            <h3 class="card__title">Hôtel de la mer</h3>
-            <p class="card__description">Nuit à partir de 46 e</p>
+            <h3 class="card__title">Auberge La Canebière</h3>
+            <p class="card__description">Nuit à partir de 25€</p>
+            <!--bloc ul card__stars stars rajout de class stars pour enfants-->
             <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon"></i></li>
-            </ul>
-          </div>
-        </article>
-        <article class="accommodation__card card">
-          <img
-            class="card__img"
-            src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-            alt="Chambres d'hôtes au coeur de l'eau, chambre moderne gris clair avec mezzanine lit double marron clair style baroque"
-          />
-          <div class="card__content">
-            <h3 class="card__title">Chambres d'hôtes au coeur de l'eau</h3>
-            <p class="card__description">Nuit à partir de 71 e</p>
-            <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon"></i></li>
-            </ul>
-          </div>
-        </article>
-        <article class="accommodation__card card">
-          <img
-            class="card__img"
-            src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-            alt="Hôtel le Soleil du matin, chambre verte à miroirs style romantique porte fenetre vue sur rue, lit double"
-          />
-          <div class="card__content">
-            <h3 class="card__title">Hôtel le Soleil du matin</h3>
-            <p class="card__description">Nuit à partir de 128 e</p>
-            <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon"></i></li>
-            </ul>
-          </div>
-        </article>
-        <article class="accommodation__card card">
-          <img
-            class="card__img"
-            src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-            alt="Hôtel chez Amina, chambre blanche et marron 2 lits separés, parquet et bureau bois vernis marron mi foncé"
-          />
-          <div class="card__content">
-            <h3 class="card__title">Hôtel chez Amina</h3>
-            <p class="card__description">Nuit à partir de 96 e</p>
-            <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon"></i></li>
-            </ul>
-          </div>
-        </article>
-        <article class="accommodation__card card">
-          <img
-            class="card__img"
-            src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-            alt="Hôtel bleu et blanc, chambre blanche et marron lit double, parquet et meubles bois vernis mi-foncé"
-          />
-          <div class="card__content">
-            <h3 class="card__title">Hôtel bleu et blanc</h3>
-            <p class="card__description">Nuit à partir de 68 e</p>
-            <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
+              <!--stars__icon--active active veut dire modificateur ici=blue-->
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
@@ -189,48 +114,9 @@
             alt="Hôtel du Port, petite chambre moderne grise claire et blanche avec 2 lits simples séparés fred-kleber, vue sur cour"
           />
           <div class="card__content">
-            <h3 class="card__title">Hôtel du Port</h3>
-            <p class="card__description">Nuit à partir de 52 e</p>
+            <h3 class="card__title">Hôtel du port</h3>
+            <p class="card__description">Nuit à partir de 52 €</p>
             <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon"></i></li>
-            </ul>
-          </div>
-        </article>
-        <article class="accommodation__card card">
-          <img
-            class="card__img"
-            src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-            alt="Auberge la Canebière, petite chambre en angle traversant double vue sur cannebière à lit simple en fer superposés"
-          />
-          <div class="card__content">
-            <h3 class="card__title">Auberge la Canebière</h3>
-            <p class="card__description">Nuit à partir de 25 e</p>
-            <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
-              <li><i class="fa-solid fa-star stars__icon"></i></li>
-            </ul>
-          </div>
-        </article>
-        <article class="accommodation__card card">
-          <img
-            class="card__img"
-            src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-            alt="Auberge le Panier, petite chambre pour 4 personnes avec 2 lits simples superposés tout en bois naturel"
-          />
-          <div class="card__content">
-            <h3 class="card__title">Auberge le Panier</h3>
-            <p class="card__description">Nuit à partir de 23 e</p>
-            <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
@@ -246,10 +132,63 @@
             alt="Hôtel les Mouettes, petite chambre blanc crème à lit double, avec grand placard miroirs, sol moquette marrron clair"
           />
           <div class="card__content">
-            <h3 class="card__title">Hôtel les Mouettes</h3>
-            <p class="card__description">Nuit à partir de 76 e</p>
+            <h3 class="card__title">Hôtel Les mouettes</h3>
+            <p class="card__description">Nuit à partir de 76€</p>
             <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon"></i></li>
+            </ul>
+          </div>
+        </article>
+        <article class="accommodation__card card">
+          <img
+            class="card__img"
+            src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+            alt="Hôtel de la mer,chambre bleue style marin lit double"
+          />
+          <div class="card__content">
+            <h3 class="card__title">Hôtel de la mer</h3>
+            <p class="card__description">Nuit à partir de 46€ </p>
+            <ul class="card__stars stars">
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon"></i></li>
+            </ul>
+          </div>
+        </article>
+        <article class="accommodation__card card">
+          <img
+            class="card__img"
+            src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+            alt="Auberge le Panier, petite chambre pour 4 personnes avec 2 lits simples superposés tout en bois naturel"
+          />
+          <div class="card__content">
+            <h3 class="card__title">Auberge Le Panier</h3>
+            <p class="card__description">Nuit à partir de 23€</p>
+            <ul class="card__stars stars">
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon--active"></i></li>
+              <li><i class="fa-solid fa-star stars__icon"></i></li>
+            </ul>
+          </div>
+        </article>
+        <article class="accommodation__card card">
+          <img
+            class="card__img"
+            src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+            alt="Hôtel chez Amina, chambre blanche et marron 2 lits separés, parquet et bureau bois vernis marron mi foncé"
+          />
+          <div class="card__content">
+            <h3 class="card__title">Hôtel Chez Amina</h3>
+            <p class="card__description">Nuit à partir de 96€</p>
+            <ul class="card__stars stars">
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
@@ -262,19 +201,18 @@
       </section>
       <aside class="popular">
         <h2 class="popular__title">
-          les plus populaires<i class="fa-solid fa-chart-line"></i>
+          Les plus populaires<i class="fa-solid fa-chart-line"></i>
         </h2>
         <article class="popular__card card">
           <img
             class="card__img"
             src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-            alt="Hôtel le Soleil du matin, chambre verte à miroirs style romantique porte fenetre vue sur rue, lit double"
+            alt="Hôtel Le soleil du matin, chambre verte à miroirs style romantique porte fenetre vue sur rue, lit double"
           />
           <div class="card__content">
-            <h3 class="card__title">Hôtel le soleil du matin</h3>
-            <p class="card__description">Nuit à partir de 128 e</p>
+            <h3 class="card__title">Hôtel Le soleil du matin</h3>
+            <p class="card__description">Nuit à partir de 128€</p>
             <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
@@ -287,13 +225,12 @@
           <img
             class="card__img"
             src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-            alt="Chambres d'hôtes au coeur de l'eau, chambre moderne gris clair avec mezzanine lit double marron clair style baroque"
+            alt="Chambres d'hôtes Au coeur de l'eau, chambre moderne gris clair avec mezzanine lit double marron clair style baroque"
           />
           <div class="card__content">
-            <h3 class="card__title">Chambres d'hôtes au coeur de l'eau</h3>
-            <p class="card__description">Nuit à partir de 71 e</p>
+            <h3 class="card__title">Chambres d'hôtes Au coeur de l'eau</h3>
+            <p class="card__description">Nuit à partir de 71€</p>
             <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
@@ -309,10 +246,9 @@
             alt="Hôtel bleu et blanc, chambre blanche et marron lit double, parquet et meubles bois vernis mi-foncé"
           />
           <div class="card__content">
-            <h3 class="card__title">Hôtel bleu et blanc</h3>
-            <p class="card__description">Nuit à partir de 68 e</p>
+            <h3 class="card__title">Hôtel Bleu et Blanc</h3>
+            <p class="card__description">Nuit à partir de 68€</p>
             <ul class="card__stars stars">
-              <!--ul.stars modifier>li combinateur descendants-->
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
               <li><i class="fa-solid fa-star stars__icon--active"></i></li>
@@ -323,7 +259,6 @@
         </article>
       </aside>
       <section id="activities" class="activities">
-        <!--id ancre activites nav-->
         <h2 class="activities__title">Activités à Marseille</h2>
         <article class="activities__card card">
           <img
@@ -342,9 +277,8 @@
           <h3 class="card__title">Fort de Pomègues</h3>
         </article>
         <article class="activities__card card">
-          <!--check w3 error unclosed element article-->
           <img
-            class="card__img"
+          class="card__img"
             src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
             alt="Parc national des Calanques avec vue plongeante sur la mer"
           />
@@ -352,7 +286,7 @@
         </article>
         <article class="activities__card card">
           <img
-            class="card__img"
+          class="card__img"
             src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
             alt="Notre-Dame-de-la-Garde sur les hauteurs de marseille"
           />
@@ -362,14 +296,12 @@
     </main>
     <footer class="footer">
       <div class="footer__column">
-        <h3 class="footer__title">A propos</h3>
+        <h3 class="footer__title"> propos</h3>
         <!--footer__ul>li combinate child-->
         <ul class="footer__list">
           <li class="footer__item"><a href="#">Fonctionnement du site</a></li>
           <li class="footer__item"><a href="#">Conditions générales</a></li>
-          <li class="footer__item">
-            <a href="#">Données et confidentialités</a>
-          </li>
+          <li class="footer__item"><a href="#">Données et confidentialités</a></li>
         </ul>
       </div>
       <div class="footer__column">
