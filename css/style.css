@@ -1,26 +1,29 @@
-html{
-    font-family: Raleway, sans-serif;
-}
+html {
+    font-family: Raleway, sans-serif;}
+    main, header, footer {
+        max-width: 1400px;                      
+        margin: 0 auto;                         
+        padding : 0 15px;                       
+    }
+
+/*navigation menu*/
 .header{
     display: inline;
-   }
-
-
-.header__logo{
-display: inline;
-position: absolute;
-width: 61.09px;
-height: 19px;
-left: 35.54px;
-top: 8.56px;}
-
+    position: absolute;}
+.header__logo {  
+    position: absolute;
+    width: 61.09px;
+    height: 19px;
+    left: 35.54px;
+    top: 8.56px;
+}
 .header__nav{
-position: absolute;
-width: 381px;
-height: 19px;
-left: 982px;
-top: 8.56px;}
-
+    position: absolute;
+    width: 381px;
+    height: 19px;
+    left: 982px;
+    top: 8.56px;
+    }
 .nav__linkheb{
     position: absolute;
     width: 113px;
@@ -32,63 +35,117 @@ top: 8.56px;}
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    color:#0065FC;
-    }
-
-.nav__linkact{
+    line-height: 19px;  
+    :hover
+    border-color: #0065FC;
+}
+.nav__linkact {
     position: absolute;
-        width: 63;
-        height: 19px;
-        left: 83.46%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 18.78px;
-    }
-
-
-
-
-h1, h2, h3, p{
-font-family: 'Raleway', sans-serif;}
-
-h1{
-font-weight: 700;
-Size: 22px;
-}
-
-h2{
-    font-Weight: 700;
-    Size: 16px;
-}
-h3{
-    font-weight: 700;
-    size: 18px;
-}
-p{
-    font-weight: 700;
-    size: 18px ; 
-}
-/*header nav flexbox*/
-.heb{
-    text-align: right;
-    font-weight: 500;
-    font-size: 16px;
-    Width: 113px;
-    Height: 19px;   
-    Left: 138px;
-}
-.act{
-    text-align: right;
+    width: 63;
+    height: 19px;
+    left: 83.46%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    width: 63px;
-    height:19px;
-    left: 318px;
+    line-height: 18.78px;
+    color: #000000;
+}
+/*search-bar*/
+.search-bar__title{
+position: absolute;
+width: 575px;
+height: 26px;
+left: 55px;
+top: 126px;
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+color: #000000;
+}
+.search-bar__text{
+position: absolute;
+width: 296px;
+height: 19px;
+left: 55px;
+top: 160px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+.search-bar__form{
+    display: inline-block;
+    position: absolute;   
+    width: 100%;
+}
+/*bitonio ici*/
+.form__label{
+    Width: 332px;
+    Height:49px;
+    padding: 10px 13px;
+}
+.fa-solidfa-location-dot{
+    position: absolute;
+    left: 0%;
+    right: 84.94%;
+    top: 0%;
+    bottom: 0%;
+    background-color: lightgrey;
+    border: 1px solid
+    border-radius: 15px 0 0 15px;
+    background-color: light-grey;
+}
+/*marseille france*/
+.form__input{
+position: absolute;
+left: 19.88%;
+right: 35.54%;
+top: 28.57%;
+bottom: 28.57%;
+Width: 332px;
+Height: 49px;
+border: 1px solid #F2F2F2;
+background: #FFFFFF;
+border-radius: 15px;
+}
+.form__button{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 16px;
+gap: 10px;
+position: absolute;
+width: Hug 132px;
+height: 49px;
+left: 341px;
+top: 200px;
+background: #0065FC;
+border: 1px solid #0065FC;
+border-radius: 0px 15px 15px 0px;
+color: white;
+font-weight: bold;
+}
+h1, h2, h3,p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
+h1 {
+    Size: 22px;
+}
 
+h2 {
+    Size: 16px;
+}
+
+h3 {
+    size: 18px;
+}
+
+p {
+    size: 18px;
+}

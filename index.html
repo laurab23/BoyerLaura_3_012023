@@ -27,7 +27,7 @@
       <!--header-nav car dans une page il peut y avoir plusieurs nav-->
       <nav class="header__nav nav">
         <a class="nav__linkheb" href="#accommodation">Hébergements</a>
-        <a class="nav__linkact" href="#activities">Activités</a>
+        <a class="nav__linkact nav__hover" href="#activities">Activités</a>
       </nav>
     </header>
     <main>
@@ -43,12 +43,11 @@
           <label for="search" class="form__label"
             ><i class="fa-solid fa-location-dot"></i
           ></label>
-          <input
+          <input class="form__input"
             type="text"
             name="search"
             id="search"
             placeholder="Marseille, France"
-            class="form__input"
           />
           <button class="form__button" type="submit">
             <!--span conteneur interne pour 1 element, alors que div c pour plusieurs elements-->
