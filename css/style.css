@@ -1,14 +1,57 @@
 html{
     font-family: Raleway, sans-serif;
 }
-#logo{
-position: absolute;
-width: 2.9px;
-height: 5.15px;
-left: 35.54px;
-top: 9.53px;
+.header{
+    display: inline;
+   }
 
-background: #0065FC}
+
+.header__logo{
+display: inline;
+position: absolute;
+width: 61.09px;
+height: 19px;
+left: 35.54px;
+top: 8.56px;}
+
+.header__nav{
+position: absolute;
+width: 381px;
+height: 19px;
+left: 982px;
+top: 8.56px;}
+
+.nav__linkheb{
+    position: absolute;
+    width: 113px;
+    height: 19px;
+    left: 36.22%;
+    right: 34.12%;
+    top: 0%;
+    bottom: 0%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color:#0065FC;
+    }
+
+.nav__linkact{
+    position: absolute;
+        width: 63;
+        height: 19px;
+        left: 83.46%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.78px;
+    }
+
+
+
 
 h1, h2, h3, p{
 font-family: 'Raleway', sans-serif;}
