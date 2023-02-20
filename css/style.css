@@ -1,23 +1,38 @@
 
-    a{ color: inherit;
-        text-decoration: none;
+    a{ color: inherit; /*sinon navigateur soulignent et autre couleur*/
     }
-    /*wildcard quand je dis que ma box fait 100px, c'est quelle fait 100 peut import le padding et margin*/
+    /*wildcard quand ma box fait 100px, c'est quelle fait 100 peut import le padding et margin*/
     *{ box-sizing: border-box;
        font-family: Raleway, sans-serif;}
-
 
 /*navigation menu*/
 nav {
 display: flex;
-border-color: 5px  rgb(123, 0, 255);
 align-items: center; /*pour mettre mem hauteur*/
 justify-content: flex-end;
+flex-wrap: wrap; /*reduction ecran mise a la ligne pour les tout petits ecrans*/
 }
-#idlogo{
+nav a{
+    padding: 2em;
+}
+#logo{
+  
     margin-right: auto;
+    padding: 0 2em; /*mettre 2 chiffres le1er c ht bas le 2eme c gauche drte*/
     
 }
+.linknav {
+text-decoration: none;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+}
+.linknav:hover{
+border-top: 3px solid #0065FC;
+color:#0065FC;
+}
+
 
 /*search-bar*/
 .search-bar__title{
