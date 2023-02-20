@@ -27,8 +27,9 @@
         <a class="linknav" href="#accommodation">Hébergements</a>
         <a class="linknav" href="#activities">Activités</a>
       </nav>
-    </header>
-    <main>
+    </header class="header">
+    <main class="wrap"> 
+      <!--on enveloppe de main jusque footer wrap pour la presentation padding-->
       <section class="search-bar">
         <h1 class="search-bar__title">
           Trouvez votre hébergement pour des vacances de rêve
@@ -36,20 +37,16 @@
         <p class="search-bar__text">
           En plein centre-ville ou en pleine nature
         </p>
-        <form method="post" action="#" class="search-bar__form form">
-          <!--lier chaq label for a son input-->
+        <div class="search-bar__form">
+        <i  class="fa-solid fa-location-dot"></i>
+        <input type="text"/>
+        <button>Rechercher</button>
+        </div>
+
+        <form method="post" action="#" class="search-bar__form">
           <label for="search" class="form__label"
-            ><i class="fa-solid fa-location-dot"></i
           ></label>
-          <input class="form__input"
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Marseille, France"
-          />
           <button class="form__button" type="submit">
-            <!--span conteneur interne pour 1 element, alors que div c pour plusieurs elements-->
-            <span class="form__button--desktop">Rechercher</span>
             <i class="fa-solid fa-magnyfying-glass form__button--mobile"></i>
           </button>
         </form>

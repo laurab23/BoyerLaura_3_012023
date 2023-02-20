@@ -32,15 +32,15 @@ line-height: 19px;
 border-top: 3px solid #0065FC;
 color:#0065FC;
 }
+/*pas besoin de media querie car herb et activités se placent lun en dessous de lautre quand on reduit ecran*/
 
+.wrap{
+    padding: 0px 2em;
+}
 
 /*search-bar*/
 .search-bar__title{
-position: absolute;
-width: 575px;
-height: 26px;
-left: 55px;
-top: 126px;
+padding: 2em 0;
 font-style: normal;
 font-weight: 700;
 font-size: 22px;
@@ -48,68 +48,23 @@ line-height: 26px;
 color: #000000;
 }
 .search-bar__text{
-position: absolute;
-width: 296px;
-height: 19px;
-left: 55px;
-top: 160px;
+margin-top: -3.5em;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 }
 .search-bar__form{
-    display: inline-block;
-    position: absolute;   
-    width: 100%;
-}
-/*bitonio ici*/
-.form__label{
-    Width: 332px;
-    Height:49px;
-    padding: 10px 13px;
-}
-.fa-solidfa-location-dot{
-    position: absolute;
-    left: 0%;
-    right: 84.94%;
-    top: 0%;
-    bottom: 0%;
-    background-color: lightgrey;
-    border: 1px solid
-    border-radius: 15px 0 0 15px;
-    background-color: light-grey;
-}
-/*marseille france*/
-.form__input{
-position: absolute;
-left: 19.88%;
-right: 35.54%;
-top: 28.57%;
-bottom: 28.57%;
-Width: 332px;
-Height: 49px;
-border: 1px solid #F2F2F2;
-background: #FFFFFF;
-border-radius: 15px;
-}
-.form__button{
 display: flex;
-flex-direction: row;
-align-items: center;
-padding: 15px 16px;
-gap: 10px;
-position: absolute;
-width: Hug 132px;
-height: 49px;
-left: 341px;
-top: 200px;
-background: #0065FC;
-border: 1px solid #0065FC;
-border-radius: 0px 15px 15px 0px;
-color: white;
-font-weight: bold;
+i{
+padding: 1em 1.3em;
+background-color: lightgrey;
+border-radius: 15px 0 0 15px;
+
 }
+
+
+
 h1, h2, h3,p {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
