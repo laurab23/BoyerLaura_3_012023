@@ -1,58 +1,24 @@
-html {
-    font-family: Raleway, sans-serif;}
-    main, header, footer {
-        max-width: 1400px;                      
-        margin: 0 auto;                         
-        padding : 0 15px;                       
+
+    a{ color: inherit;
+        text-decoration: none;
     }
+    /*wildcard quand je dis que ma box fait 100px, c'est quelle fait 100 peut import le padding et margin*/
+    *{ box-sizing: border-box;
+       font-family: Raleway, sans-serif;}
+
 
 /*navigation menu*/
-.header{
-    display: inline;
-    position: absolute;}
-.header__logo {  
-    position: absolute;
-    width: 61.09px;
-    height: 19px;
-    left: 35.54px;
-    top: 8.56px;
+nav {
+display: flex;
+border-color: 5px  rgb(123, 0, 255);
+align-items: center; /*pour mettre mem hauteur*/
+justify-content: flex-end;
 }
-.header__nav{
-    position: absolute;
-    width: 381px;
-    height: 19px;
-    left: 982px;
-    top: 8.56px;
-    }
-.nav__linkheb{
-    position: absolute;
-    width: 113px;
-    height: 19px;
-    left: 36.22%;
-    right: 34.12%;
-    top: 0%;
-    bottom: 0%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;  
-    :hover
-    border-color: #0065FC;
+#idlogo{
+    margin-right: auto;
+    
 }
-.nav__linkact {
-    position: absolute;
-    width: 63;
-    height: 19px;
-    left: 83.46%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
-    color: #000000;
-}
+
 /*search-bar*/
 .search-bar__title{
 position: absolute;
