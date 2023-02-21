@@ -5,6 +5,13 @@
     *{ box-sizing: border-box;
        font-family: Raleway, sans-serif;}
 
+    main{
+        display: block;
+    }
+    body{
+        margin: 0;
+       }
+
 /*navigation menu*/
 nav {
 display: flex;
@@ -35,7 +42,7 @@ color:#0065FC;
 /*pas besoin de media querie car herb et activités se placent lun en dessous de lautre quand on reduit ecran*/
 
 .wrap{
-    padding: 0px 2em;
+    padding: 0px 2.1em;
 }
 
 /*search-bar*/
@@ -47,41 +54,60 @@ font-size: 22px;
 line-height: 26px;
 color: #000000;
 }
-.search-bar__text{
+.search-bar__text {
 margin-top: -3.5em;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 }
-.search-bar__form{
-display: flex;
-i{
-padding: 1em 1.3em;
-background-color: lightgrey;
-border-radius: 15px 0 0 15px;
-
+.search-bar__form {
+display: inline-block;
+position: absolute;
 }
+.search-bar__i {
+position: absolute;
+padding:  1.15rem 1.5rem;
+background-color: lightgray;
+border-radius: 15px 0px 0px 15px;
+}
+.search-bar__input {
+padding: 8px 10px 9px 110px;
+border: 1px solid lightgrey;
+margin-left: 45px;
+margin-right: -16px;}
 
-
+.search-bar__input::placeholder {
+position: absolute;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+color: black;
+}
+.search-bar__button{
+position: absolute;
+color: white;
+font-size: 16px;
+width: 100px;
+height: 36px;
+padding:1px 0px 0px  12px;
+border-radius: 0px 15px 15px 0px;
+border: none;
+background-color: #0065FC;
+cursor: pointer;
+}
 
 h1, h2, h3,p {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
-
 h1 {
     Size: 22px;
 }
-
 h2 {
     Size: 16px;
 }
-
-h3 {
+h3, p {
     size: 18px;
 }
 
-p {
-    size: 18px;
-}
