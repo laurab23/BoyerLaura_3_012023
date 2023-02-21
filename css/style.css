@@ -9,8 +9,21 @@
         display: block;
     }
     body{
-        margin: 0;
-       }
+        margin: 0;}
+
+    h1, h2, h3,p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+    h1 {
+        Size: 22px;
+    }
+    h2 {
+        Size: 16px;
+    }
+    h3, p {
+        size: 18px;
+    }
 
 /*navigation menu*/
 nav {
@@ -49,8 +62,6 @@ color:#0065FC;
 .search-bar__title{
 padding: 2em 0;
 font-style: normal;
-font-weight: 700;
-font-size: 22px;
 line-height: 26px;
 color: #000000;
 }
@@ -63,19 +74,23 @@ line-height: 19px;
 }
 .search-bar__form {
 display: inline-block;
-position: absolute;
 }
 .search-bar__i {
 position: absolute;
-padding:  1.15rem 1.5rem;
+padding:  1.25rem 1.5rem 1rem;
 background-color: lightgray;
 border-radius: 15px 0px 0px 15px;
 }
+.fa-solid.fa-location-do {
+position: absolute;
+}
 .search-bar__input {
-padding: 8px 10px 9px 110px;
+padding:  8px 10px 9px 10px;
 border: 1px solid lightgrey;
-margin-left: 45px;
-margin-right: -16px;}
+padding-left: 0px;
+padding-right: 100px; /*input longueur vers search*/
+margin-left: 46px;}
+
 
 .search-bar__input::placeholder {
 position: absolute;
@@ -88,26 +103,71 @@ color: black;
 position: absolute;
 color: white;
 font-size: 16px;
-width: 100px;
+width: 110px;
 height: 36px;
-padding:1px 0px 0px  12px;
+padding: 1px 0px 0px 5px; /*searchtext*/
+margin-left: -5px; /*rapproche search from input*/
 border-radius: 0px 15px 15px 0px;
 border: none;
 background-color: #0065FC;
 cursor: pointer;
 }
+/*FILTERS*/
+.filters{
+    display: inline-flex;
+    padding-top: 17px;
+    flex-flow: wrap;
+    align-items: center;
+    gap: 15px;
+}
+.filters__title {
+    margin-right: 20px;
+    font-size: 18px;
+}
+.filters__button p{
+    margin: 0.80em;
+    padding-right: 30px;
+    padding-left: 20px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+.filters__button{
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    border-left: none;
+    
+}
+.filters__button .fa-solid {
+   color: #0065FC;
+   min-width: 10px;
+}
+.filters__button .fa-child-reaching .fa-heart .fa-dog .fa-money-bill-wave{
+    padding: 10px 10px 10px 10px;
+    margin-right: 5px;}
 
-h1, h2, h3,p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
-h1 {
-    Size: 22px;
-}
-h2 {
-    Size: 16px;
-}
-h3, p {
-    size: 18px;
-}
+    .filters__button:hover{
+       
+        background-color: #DEEBFF;
+    }
+    /*INFO*/
+    .info__icon {
+        display: flex;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #D9D9D9;
+        border-radius: 100%;
+        padding: 0.50em;
+        color: #0065FC;
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+
+    .info__text{
+        margin-left: -10px;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
 
