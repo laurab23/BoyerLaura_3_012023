@@ -173,7 +173,7 @@ cursor: pointer;
  /*section*/
  .accommodation__title{
     position: absolute;
-    padding-left: 20px;
+    padding-left: 30px;
    margin-top: -60px;
  }
 
@@ -185,12 +185,40 @@ cursor: pointer;
     margin-top: 100px;
     padding-top: 6em;
    }
+.accommodation__card{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card__img{
+
+    border-radius: 20px 20px 0px 0px;
+    height: 124px;
+    width: 246px;
+}
+.card__description{
+    margin-top: -15px;
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 14px;
+}
+.card__title{
+   margin-left: 10px;
+    margin-top: 5px;
+}
+.card__stars{
+    display: inline-flex;
+   color: #0065FC;
+}
+.plus{
+    position: absolute;
+    margin-top: 320px;
 }
 /*articles*/
 .popular{
     display: block;
-    gap; 20px;
     background-color: lightgrey;
+    gap; 20px;
 
 }
 
