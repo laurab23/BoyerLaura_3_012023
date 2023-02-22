@@ -20,7 +20,7 @@
         Size: 22px;
     }
     h2 {
-        size: 18px;
+        size: 18px;}
     h3,p {
         Size: 16px;
     }
@@ -151,6 +151,7 @@ cursor: pointer;
 /*INFO*/
 .info__icon {
         display: flex;
+        position: absolute;
         align-items: center;
         width: 24px;
         height: 24px;
@@ -158,16 +159,38 @@ cursor: pointer;
         border-radius: 100%;
         padding: 0.50em;
         color: #0065FC;
-        margin-bottom: 0px;
-        margin-right: 10px;
+        margin-bottom: -160px;
+        margin-right: -10px;
+        margin-left: 5px;
     }
 .info__text{
-        margin-left: -10px;
+    position: absolute;
+        margin-left: 40px;
+        margin-bottom: -145px;
         font-weight: normal;
         font-size: 16px;
     }
+ /*section*/
+ .accommodation__title{
+    position: absolute;
+    padding-left: 20px;
+   margin-top: -60px;
+ }
 
-/*flex Marseille acommodation*/
+ .accommodation__list{
+    display: inline-flex;
+    gap: 1em;
+    background-color: lightgrey;
+    border-radius: 15px;
+    margin-top: 100px;
+    padding-top: 6em;
+   }
+}
+/*articles*/
+.popular{
+    display: block;
+    gap; 20px;
+    background-color: lightgrey;
 
-
+}
 
