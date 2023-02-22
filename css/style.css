@@ -170,55 +170,106 @@ cursor: pointer;
         font-weight: normal;
         font-size: 16px;
     }
- /*section*/
+ /*SECTION*/
+ /*conteneur flex width: 880px; height: 626px;*/
+ .accommodation{
+    position: absolute;
+    display: flex;
+   box-sizing: content-box;
+    border-radius: 20px;
+ }
  .accommodation__title{
     position: absolute;
-    padding-left: 30px;
-   margin-top: -60px;
+    padding-left: 50px;
+    margin-top: -60px;
  }
 
  .accommodation__list{
     display: inline-flex;
     gap: 1em;
-    background-color: lightgrey;
+    background-color: #F2F2F2;
     border-radius: 15px;
     margin-top: 100px;
     padding-top: 6em;
    }
+
+   /*ARTICLES CARDS*/
 .accommodation__card{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing:;
 
 }
 .card__img{
-
+padding-left: 10px;
+margin-top: -25x;
     border-radius: 20px 20px 0px 0px;
     height: 124px;
     width: 246px;
 }
 .card__description{
     margin-top: -15px;
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: normal;
     font-size: 14px;
 }
 .card__title{
-   margin-left: 10px;
-    margin-top: 5px;
+   margin-left: 20px;
+   margin-top: 5px;
 }
 .card__stars{
-    display: inline-flex;
+   display: inline-flex;
+   margin-left: 20px;
+   margin-top: auto;
+   padding-top: -10px;
    color: #0065FC;
-}
+   }
+
 .plus{
     position: absolute;
-    margin-top: 320px;
+    margin-top: 210px;   
 }
-/*articles*/
-.popular{
-    display: block;
-    background-color: lightgrey;
-    gap; 20px;
 
+/*ASIDE*/
+/*conteneur flex*/
+.popular{
+    box-sizing: content-box;
+    display: block;
+    flex-direction: column;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+
+}
+    .popular__title {
+        padding-left: 10px;
+    }
+    
+    .fa-solid.fa-chart-line{
+        padding-left: 120px;
+        color: #0065FC;
+        
+    }
+   .card__img{
+    width: 137px;
+    height: 144px;
+    margin-left: 30px;
+   }
+/*ACTIVITES*/
+
+.activities{
+    
+display: flex;
+
+}
+.activities__title{
+    padding-left: 20px ;
+}
+.card__img{
+    display: flex;
+    width: 302px;
+    height: 444px;
+    padding-top: 70px;
+    
 }
 
