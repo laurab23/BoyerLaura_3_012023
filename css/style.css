@@ -158,72 +158,63 @@ border-radius: 10px 0px 0px 10px;
     color: #0065FC;
 }
 
-/*SECTION*/
-/*conteneur flex width: 880px; height: 626px;*/
-.container{
-    display: flex;
-  
-}
-.accommodation {
-    
-    display: flex;
-    box-sizing: content-box;
-    border-radius: 20px;
-}
+/*SECTION HEBERGEMENTS*/
+
+/*conteneur flex hebergements width: 880px; height: 626px;*/
 
 .accommodation__list {
-    
-    gap: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
     background-color: #F2F2F2;
-    border-radius: 15px;
-
 }
 
 /*ARTICLES CARDS*/
 .accommodation__card {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    box-sizing: ;
+    align-items: flex-start;
 
 }
 
 .card__img {
-    padding-left: 10px;
-    margin-top: -25x;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     border-radius: 20px 20px 0px 0px;
     height: 124px;
     width: 246px;
 }
 
 .card__description {
-    margin-top: -15px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: normal;
     font-size: 14px;
 }
 
 .card__title {
-    margin-left: 20px;
-    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-weight: bold;
 }
 
-.card__stars {
-    display: inline-flex;
-    margin-left: 20px;
-    margin-top: auto;
-    padding-top: -10px;
+.blue__star {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
     color: #0065FC;
 }
 
 .plus {
-    position: absolute;
-    margin-top: 210px;
+   font-weight: bold;
 }
 
-/*ASIDE*/
+/*  SECTION POPULAR ASIDE*/
 /*conteneur flex*/
-.popular {
+.popular__list {
     box-sizing: content-box;
     display: block;
     flex-direction: column;
