@@ -34,22 +34,26 @@ h3, p {
 }
 
 /*navigation menu*/
-.header__logo {
-    display: flex;
-    width: 5%;
-    }
-    
 .header__nav {
     display: flex;
-    flex-direction:row
-    align-items: center;
+    justify-content: space-between;
     /*pour mettre mem hauteur*/
-    justify-content: flex-end;
-    gap: 20px;
+    padding-top: 10px;
     flex-wrap: wrap;
     /*reduction ecran mise a la ligne pour les tout petits ecrans*/
 }
 
+.headernav__logo {
+   display: flex;
+    width: 5%;
+
+    }
+.link{
+  display: flex;  
+  justify-content: space-between;
+  gap: 5em;
+}
+ 
 .nav__link:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
@@ -117,7 +121,7 @@ border-radius: 10px 0px 0px 10px;
   padding-top: 2em;
     width: 100%;
 }
-.filters__list {
+.filters__lisT {
     display: flex;
     gap: 4em;
 }
@@ -140,26 +144,29 @@ border-radius: 10px 0px 0px 10px;
 /*INFO*/
 .info{
     display: flex;
+    align-items: center;
+}
+    
+.info__text{
+    font-weight: normal;
 }
 .info__icon {
     display: flex;
-    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
     border: 1px solid #D9D9D9;
     border-radius: 100%;
     color: #0065FC;
 }
-.info__text {  
-    font-size: 16px;
-    font-weight: normal;
-}
+
 
 
 /*SECTION*/
 /*conteneur flex width: 880px; height: 626px;*/
 .container{
     display: flex;
+  
 }
 .accommodation {
     
