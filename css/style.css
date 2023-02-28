@@ -2,7 +2,6 @@
 * {
     box-sizing: border-box;
     font-family: Raleway, sans-serif;
-
 }
 
 a {
@@ -37,17 +36,14 @@ h3, p {
 .header__nav {
     display: flex;
     justify-content: space-between;
-    /*pour mettre mem hauteur*/
     padding-top: 10px;
     flex-wrap: wrap;
     /*reduction ecran mise a la ligne pour les tout petits ecrans*/
 }
-
 .headernav__logo {
    display: flex;
     width: 5%;
-
-    }
+}
 .link{
   display: flex;  
   justify-content: space-between;
@@ -58,25 +54,23 @@ h3, p {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
-
 /*search-bar*/
-.search-bar__title {
-    padding: 2em 0;
+
+.search__title {
+   padding: 1em 0em 0em 0em;
     font-style: normal;
-    line-height: 26px;
     color: #000000;
 }
 
-.search-bar__text {
-    margin-top: -3.5em;
+.search__text {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
 }
 /*PARENT*/
 .search-bar__form {
     display: flex;
+    padding-top: 1em;
    
 }
 /*ENFANTS*/
@@ -116,51 +110,53 @@ border-radius: 10px 0px 0px 10px;
 
 /*FILTERS*/
 
-.filters{
+.filters__list{
     display: flex;
-  padding-top: 2em;
-    width: 100%;
-}
-.filters__lisT {
-    display: flex;
-    gap: 4em;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    padding-top: 2em;
+    flex-wrap: wrap;
 }
 
-.filters__item{
-   padding: 5px;
-   border: 1px solid lightgrey;
-   border-radius: 30px;
-   font-weight: bold;
-}
 .filters__icon{
     color: #0065FC;
+    padding-left: 1em;
 }
-
-.filters__button:hover {
-
+/*attention span c inline donc pas hauteur*/
+.filters span{
+    display: inline-block;
+   font-weight: bold; 
+   padding: 10px; 
+}
+.filters{
+    border: 1px solid lightgrey; 
+    border-radius: 30px;
+}
+.filters:hover {
     background-color: #DEEBFF;
 }
-
 /*INFO*/
-.info{
+
+ .info{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-}
-    
+    gap: 10px;
+
+ }   
 .info__text{
     font-weight: normal;
 }
 .info__icon {
     display: flex;
-    align-items: center;
+    justify-content: center;
     width: 20px;
     height: 20px;
     border: 1px solid #D9D9D9;
     border-radius: 100%;
     color: #0065FC;
 }
-
-
 
 /*SECTION*/
 /*conteneur flex width: 880px; height: 626px;*/
