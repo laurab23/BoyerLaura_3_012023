@@ -20,18 +20,6 @@ h1, h2, h3, p {
     font-weight: 700;
 }
 
-h1 {
-    font-size: 22px;
-}
-
-h2 {
-   font-size: 18px;
-}
-
-h3, p {
-    font-size: 1em;
-}
-
 /*navigation menu*/
 .header__nav {
     display: flex;
@@ -164,32 +152,36 @@ border-radius: 10px 0px 0px 10px;
 
 .accommodation__list {
     display: flex;
-    justify-content: flex-start;
-    align-items:center;
     background-color: #F2F2F2;
+    flex-basis: 60%;
 }
-
+.accommodation__city{
+display: flex;
+flex-wrap: wrap;
+justify-content:flex-start;
+}
 /*ARTICLES CARDS*/
 .accommodation__card {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items:center;
+    flex-wrap: wrap;
+  
 
 }
 
 .card__img {
-    display: flex;
-    justify-content: center;
-    align-items:center;
+    display: inline-block;
+    justify-content: flex-start;
     border-radius: 20px 20px 0px 0px;
-    height: 124px;
-    width: 246px;
+    width: 150px;
+    height: 222px;
 }
+
 
 .card__description {
     display: flex;
     justify-content: center;
-    align-items: center;
     font-weight: normal;
     font-size: 14px;
 }
@@ -199,15 +191,20 @@ border-radius: 10px 0px 0px 10px;
     justify-content: center;
     align-items: center;
    font-weight: bold;
+   font-size: 16px;
 }
 
 .blue__star {
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
     color: #0065FC;
 }
-
+.black__star{
+    color: grey;
+}
+.blue__star .black__star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .plus {
    font-weight: bold;
 }
@@ -215,7 +212,7 @@ border-radius: 10px 0px 0px 10px;
 /*  SECTION POPULAR ASIDE*/
 /*conteneur flex*/
 .popular__list {
-    box-sizing: content-box;
+   
     display: block;
     flex-direction: column;
     background-color: #F2F2F2;
@@ -244,11 +241,15 @@ border-radius: 10px 0px 0px 10px;
 .activities {
 
     display: flex;
+    justify-content: flex-start;
 
 }
 
 .activities__title {
-    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+
 }
 
 .card__img {
@@ -257,4 +258,28 @@ border-radius: 10px 0px 0px 10px;
     height: 444px;
     padding-top: 70px;
 
+}
+/*FOOTER*/
+/*footer contenair*/
+.footer{
+    display: flex;
+    background-color: #DEEBFF;
+}
+.footer__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-left: 12em;
+    gap: 1em;
+   
+    
+}
+.footer__title{
+    font-size: 14px;
+    gap: 3em;
+}
+.footer__text{
+font-size: 12px;
 }
