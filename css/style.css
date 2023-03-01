@@ -147,61 +147,62 @@ border-radius: 10px 0px 0px 10px;
 }
 
 /*SECTION HEBERGEMENTS*/
-
-/*conteneur flex hebergements width: 880px; height: 626px;*/
-
-.accommodation__list {
-    display: flex;
-    background-color: #F2F2F2;
-    flex-basis: 60%;
+/*conteneur flex height: 626px;*/
+.card__title {
+    font-weight: bold;
+    font-size: 16px;
+ }
+ .accommodation__title{
+    font-weight: bold;
+    font-size: 22px;
 }
-.accommodation__city{
-display: flex;
-flex-wrap: wrap;
-justify-content:flex-start;
-}
-/*ARTICLES CARDS*/
-.accommodation__card {
-    display: flex;
-    justify-content: flex-start;
-    align-items:center;
+
+.contenair__accommodation{
+    display: inline-flex;
+    justify-content:flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
-  
-
+   
+    background-color: #F2F2F2;
+   
+}
+.accommodation__card {
+    display: inline-block;
+    justify-content: space-between;
+    align-items:baseline;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   flex-basis: 10%;
+   flex-shrink: 2;
+ 
 }
 
 .card__img {
     display: inline-block;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
     border-radius: 20px 20px 0px 0px;
-    width: 150px;
-    height: 222px;
+   width: 100px;
+   
 }
-
-
-.card__description {
-    display: flex;
-    justify-content: center;
-    font-weight: normal;
-    font-size: 14px;
-}
-
-.card__title {
-    display: flex;
+.card__content {
+    display: inline-block;
     justify-content: center;
     align-items: center;
-   font-weight: bold;
-   font-size: 16px;
-}
 
-.blue__star {
+}
+.card__description {
+    font-weight: normal;
+} 
+.blue__star{
     color: #0065FC;
 }
 .black__star{
     color: grey;
 }
 .blue__star .black__star{
-    display: flex;
+    
     justify-content: center;
     align-items: center;
 }
@@ -211,12 +212,11 @@ justify-content:flex-start;
 
 /*  SECTION POPULAR ASIDE*/
 /*conteneur flex*/
-.popular__list {
-   
+.contenair__popular {
     display: block;
     flex-direction: column;
     background-color: #F2F2F2;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;;
 
 }
 
